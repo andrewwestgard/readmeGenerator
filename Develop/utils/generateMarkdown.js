@@ -12,7 +12,7 @@ function generateReadme(responses) {
     ${responses.description}
 
     ## Table of Contents
-345rt
+
     ## Usage
     ${responses.usage}
 

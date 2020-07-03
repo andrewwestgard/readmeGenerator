@@ -45,7 +45,7 @@ function questionUser() {
         {
             type: "list",
             message: "What license do you need?",
-            choices: ["MIT", "Other", "Other"],
+            choices: ["MIT", "BSD-3", "Mozilla Public License 2.0", "Eclipse Public License version 2.0"],
             name: "license"
         },
         {
@@ -72,33 +72,33 @@ function questionUser() {
 function generateReadme (responses) {
     return `
 
-        ## Project Name
+        # Project Name
         ${responses.projectName}
     
-        ## Creator
+        # Creator
         ${responses.username}
 
-        ## Table of Contents
+        # Table of Contents
     
-        ## Project Description 
+        # Project Description 
         ${responses.description}
 
-        ## Usage
+        # Usage
         ${responses.usage}
     
-        ## Technology Overview
+        # Technology Overview
         ${responses.technology}
     
-        ## Licenses
+        # Licenses
         ${responses.license}
     
-        ## Contributing
+        # Contributing
         ${responses.contributors}
     
-        ## Testing
+        # Testing
         ${responses.tests}
     
-        ## Questions
+        # Questions
         ${responses.questions}
     
     `;
